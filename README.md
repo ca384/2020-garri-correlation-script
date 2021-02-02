@@ -1,7 +1,6 @@
-# 2020-garri-correlation-script
+## 2020-garri-correlation-script
 Scripts for 2020 cassava roots and garri analysis
-##scriot for correlation of garri traits
-
+##script for correlation of garri traits
 umu.oto<-read.csv("/Users/chinedoziamaefula/OneDrive - Cornell University/2020 Data/2020.umu.otobi.combine.harvestdata.csv") #harvest data for two locations
 
 garri.38<- read.csv("~/OneDrive - Cornell University/2020 Data/2020coplete_umu_oto_garri_data.csv", header=TRUE)
@@ -84,4 +83,11 @@ corre.oto<-round(cor(oto.38,use="complete.obs"),3)
 corplot.oto<-corrplot(corre.oto, type = "upper", order = "hclust",tl.col = "black" , tl.srt = 90,  cl.pos = "n")
 
 write.csv(corplot.oto,file="~/OneDrive - Cornell University/2020 Data/correlation.oto_new.csv")
+
+##The traits of the two correlation plots are not in the same order
+
+
+
+
+
 
