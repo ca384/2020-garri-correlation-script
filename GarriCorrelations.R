@@ -3,8 +3,6 @@
 ##script for correlation of garri traits
 
 # Chinedozi: download these data files and add them to this repository
-umu.oto<-read.csv("/Users/chinedoziamaefula/OneDrive - Cornell University/2020 Data/2020.umu.otobi.combine.harvestdata.csv") #harvest data for two locations
-
 garri.38<- read.csv("~/OneDrive - Cornell University/2020 Data/2020complete_umu_oto_garri_data.csv", header=TRUE)
 dim(garri.38)
 str(garri.38)
